@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b178cf10441204a8b89ca271fbd730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car: {fileID: 907164545}
+  thingToFollow: {fileID: 907164545}
 --- !u!1 &578966318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1607,7 @@ GameObject:
   - component: {fileID: 907164549}
   - component: {fileID: 907164551}
   - component: {fileID: 907164552}
+  - component: {fileID: 907164553}
   m_Layer: 0
   m_Name: Cruisy McDrive
   m_TagString: Untagged
@@ -1740,6 +1741,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466aa58205da82b47a764edf57c01472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &907164553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907164545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8281e4368522e50439df43d4741cbe36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  moveSpeed: 20
 --- !u!1 &982387187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,10 +2079,9 @@ GameObject:
   - component: {fileID: 1185763787}
   - component: {fileID: 1185763786}
   - component: {fileID: 1185763788}
-  - component: {fileID: 1185763789}
   m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
+  m_Name: Customer
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2155,27 +2169,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!50 &1185763789
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185763785}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1212098649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,12 +3187,12 @@ GameObject:
   - component: {fileID: 1729715129}
   - component: {fileID: 1729715128}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: Package
+  m_TagString: Package
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1729715128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3286,8 +3279,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729715127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 2.7, z: 0}
-  m_LocalScale: {x: 1, y: 2.5632, z: 1}
+  m_LocalPosition: {x: 0.03, y: 3.69, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
